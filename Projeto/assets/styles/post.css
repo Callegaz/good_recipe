@@ -1,24 +1,38 @@
-.user {
-    border: 1px solid black;
-    width: 50%;
-    height: 100px;
-}
-.foto {
-    border: 1px solid black;
-    width: 50%;
-    height: 250px;
-    display: inline-block;
-}
-.resumo {
-    border: 1px solid black;
-    width: 15%;
-    height: 250px;
-    display: inline-block;
-}
-.receita {
-    border: 1px solid black;
-    width: 50%;
-    height: 250px;
-    display: inline-block;
+body{
+    padding: 100px;
 }
 
+
+.user {
+  border: 1px dotted black;
+  width: 50%;
+  height: 100px;
+  align-items: flex-start;
+}
+.userImg {
+    resize: both;
+    width: 100px
+}
+.foto {
+  border: 1px dotted black;
+  width: 100%;
+  resize: both;
+}
+.receitaImg{
+    resize: both;
+    height: 225px;
+}
+.resumo {
+  border: 1px dotted black;
+  width: 15%;
+}
+.receita {
+  border: 1px dotted black;
+  width: 50%;
+  height: 250px;
+  display: inline-block;
+}
+.resumoTxt{
+  width: 100%;
+  padding: 5px;
+}

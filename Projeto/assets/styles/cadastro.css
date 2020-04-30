@@ -1,0 +1,66 @@
+body {
+    background-image: linear-gradient(to bottom, #b36100, #f28402);
+    font-family: sans-serif;
+  }
+  
+  .form {
+    width: 600px;
+    margin: auto;
+    padding-top: 50px;
+  }
+  
+  .border {
+    box-shadow: 1px 1px #ccc;
+    background-color: #f5f3f0;
+    padding: 30px;
+    border-radius: 5px;
+  
+  }
+  
+  .img-center {
+    text-align: center;
+  }
+  
+  .img-login {
+    border-radius: 100px;
+    width: 100px;
+    box-shadow: 1px 1px 1px #ccc;
+  }
+  
+  .bv {
+    color: #f57902;
+    font-family: constantia;
+  }
+  
+  .buton-cadastrar {
+    background-image: linear-gradient(to right, #f56a07, #b04d07);
+    width: 20%;
+    border-radius: 50px;
+    padding: 5px;
+    border: 0px;
+    color: white;
+    outline: 0px;
+    padding-top: 3px;
+    margin-top: 5px;
+  }
+  
+  .buton-entrar {
+    background-image: linear-gradient(to right, #f56a07, #b04d07);
+    width: 20%;
+    border-radius: 50px;
+    padding: 5px;
+    border: 0px;
+    color: white;
+    outline: 0px;
+    padding-top: 3px;
+    margin-top: 5px;
+  }
+  
+  .img {
+    width: 5%;
+  }
+  
+  .hr {
+    background-color: #b36100;
+  }
+  

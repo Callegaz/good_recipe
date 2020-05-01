@@ -1,15 +1,113 @@
 <!DOCTYPE html>
-<html>
 
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="../assets/styles/cadastro.css">
+<html lang="pt-BR" dir="ltr">
 
-</head>
+ <head>
 
-<body>
-    
+  <link rel="stylesheet" type="text/css" href="../assets/styles/cadastro.css">
 
-</body>
 
-</html>
+  <link href="https://fonts.googleapis.com/css?family=Tangerine" rel="Stylesheet">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <meta charset="utf-8">
+
+  <title>Tela de Login</title>
+
+ </head>
+ <body>
+
+   <form class="form" action="#">
+     <div class="border">
+       <div class="img-center">
+         <img class="img-login" src="../assets/imagens/cadastro/img/nofoto.jpg" alt="">
+
+         <br><h2 class="bv"><b>BEM VINDO!</b></h2>
+
+         <form>
+           <div class="form-group">
+             <input type="text" class="form-control" id="formGroupExampleInput" placeholder="exemplo@exemplo.com">
+           </div>
+           <div class="form-group">
+             <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="Senha">
+           </div>
+         </form>
+
+         <div class="lembre-me">
+              <input id="checkbox-lembre" type="checkbox" name="option" value="">
+              <label for="checkbox-lembre"> Lembre-se de mim</label>
+         </div>
+
+         <div class="botao">
+           <center><button class="buton-entrar" type="submit" name="button">ENTRAR</button></center>
+         </div>
+              <br>
+         <div class="imagens">
+           <img class="img" src="../assets/imagens/cadastro/icon/fb-icon.png" alt="">
+           <img class="img" src="../assets/imagens/cadastro/icon/google-icon.png" alt="">
+         </div>
+
+            <div class="hr">
+              <hr class="hr">
+            </div>
+
+         <h2>OU</h2>
+         <p>Cadastre-se diretamente no nosso site</p>
+
+
+         <form>
+           <div class="row">
+             <div class="col">
+               <input type="text" class="form-control" placeholder="Nome">
+             </div>
+             <div class="col">
+               <input type="text" class="form-control" placeholder="E-mail">
+             </div>
+           </div>
+
+           <br>
+
+           <div class="row">
+             <div class="col">
+               <input type="password" class="form-control" placeholder="Senha">
+                </div>
+                  <div class="col">
+                    <input type="password" class="form-control" placeholder="Confirme a senha">
+
+                  </div>
+                </div>
+                  <br>
+
+
+                  <center><div class="row">
+                    <div class="col">
+                      Data de Nascimento
+                      <input class="form-control col-sm-7"type="date" name="" value="">
+                    </div>
+                    <div class="col">
+                      Localização
+                      <select class="form-control col-sm-7"name="">
+                    <option value="Brasil">Brasil</option>
+                  </select>
+                    </div>
+                  </div></center>
+
+         </form>
+
+         <br>
+         <div class="termo">
+
+           <input id="checkbox-politica" type="checkbox" name="option" value="">
+           <label for="checkbox-politica">Eu aceito os Termos de Uso e Politica de Privacidade do Good Recipe.</label>
+         </div>
+
+         <div class="botao">
+        <center><button class="buton-cadastrar" type="submit" name="button">CADASTRAR</button></center>
+         </div>
+
+
+     </div>
+   </form>
+
+  </body>
+    </html>

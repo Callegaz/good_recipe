@@ -1,5 +1,5 @@
 .img-login {
-  border-radius: 100px;
+  border-radius: 100%;
   width: 100px;
   box-shadow: 1px 1px 1px #0007;
 }
@@ -8,7 +8,6 @@
   height: 150px;
   border: 1px solid black;
 }
-
 .filtro {
   height: 500px;
   width: 150px;
@@ -16,9 +15,7 @@
 }
 .cabecalho {
   height: 100px;
-  
 }
-
 .name {
   font-size: 25px;
 }

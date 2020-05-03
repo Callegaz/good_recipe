@@ -1,0 +1,78 @@
+div {
+    margin: .15rem;
+}
+
+
+.enviar {
+    width: 2.5rem;
+   
+
+}
+
+.ingredientes {
+    width: 2.5rem;
+    height: 2.5rem;
+   
+}
+
+.modo-de-preparo {
+    width: 2.5rem;
+    height: 2.5rem;
+   
+}
+
+.revisão {
+    width: 2.5rem;
+    height: 2.5rem;
+   
+}
+
+.nome-da-receita {
+    
+    border: 1px solid orange;
+    border-radius: 15px;
+    
+    background-color: white;
+    text-align: left;
+    width: 45rem;
+    height: 
+}
+
+
+.foto-da-receita {
+    margin-left: px;
+    border: 3px solid orange;
+    border-radius: 15px;
+    padding: px;
+    background-color: white;
+    text-align: center;
+    width: 25rem;
+    height: 10rem;
+}
+
+.receita {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.favorita {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.relogio {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.porção {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.observação {
+    color: rgba(238, 139, 10, 0.959);
+    font-weight: bold;
+    line-height: 1rem;
+}
+

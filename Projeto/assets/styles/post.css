@@ -1,6 +1,5 @@
 .avaliacao{
-  margin-left: 1%;
-  width: 48%;
+  
   padding-top: 15px;
   text-align: center;
 }
@@ -14,14 +13,10 @@
 }
 .espaco {
   width: 100%;
-  height: 50px;
+  height: 25px;
   /* border: 1px solid black; */
 }
-.filtro {
-  height: 500px;
-  width: 150px;
-  border: 1px solid black;
-}
+
 .cabecalho {
   height: 100px;
 }

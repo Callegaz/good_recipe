@@ -1,25 +1,23 @@
-.side-menu {font-size: 15pt;
-    font: Arial;
-    background: #D2691E;
-    color: #FFF;
-    padding: 10px;
+.side-menu {
+  font-size: 15pt;
+  font: Arial;
+  background: #d2691e;
+  color: #fff;
+  padding: 10px;
 }
-.titulo {font-size: 11pt;
-    font: Arial;
-    background: #D2691E;
-    color: #FFF;
-    padding: 10px;
+.titulo {
+  font: Arial;
+  background: #d2691e;
+  color: #fff;
+  padding: 10px;
 }
-.filtro { 
-    
-    background: #D2691E;
-    color: #F5FFFA;
-    padding: 20px;
-    border: 5px solid 	#000000;    
-    position: absolute;
-    margin-top: 20px;
+.filtro {
+  background: #d2691e;
+  color: #f5fffa;
+  padding: 20px;
+  /* box-shadow: 8px 4px 8px #0007; */
+  position:fixed;
+  left:0;
+  top: 5%;
+  margin-bottom: 23px;
 }
-.sobre {
-   
-}
-

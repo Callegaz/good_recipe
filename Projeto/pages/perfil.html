@@ -8,6 +8,9 @@
     <link rel="stylesheet" type="text/css" href="../assets/styles/sideMenu.css">
     <link rel="stylesheet" type="text/css" href="../assets/styles/post.css">
 
+    <!-- js -->
+    <script src="../js/funcoes.js"></script>
+
     <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -16,15 +19,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <style>
-        .person {
-            border-radius: 100px;
-            width: 170px;
-            box-shadow: 1px 1px 1px #ccc;
-            position: absolute;
-            left: 15%;
-            top: -25%;
-        }
+
     </style>
+
+    <title>GOOD RECIPE</title>
 
 </head>
 
@@ -47,23 +45,42 @@
                     <text class="good">GOOD RECIPE</text>
                 </div>
 
-                <div class="col-sm-5">
-                    <img class="person" src="../assets/imagens/cadastro/img/nofoto.jpg" alt="">
+                <div class="col-sm-3">
+                    <a href="https://www.djapa.com.br/">
+                        <img class="person" src="../assets/imagens/cabecalho/img/perfil.png" alt="">
+                    </a>
                 </div>
-
+                <div class="cabec_wrap col-sm-1">
+                    <a
+                        href="https://www.ifood.com.br/delivery/mogi-das-cruzes-sp/djapa-parque-monte-libano/e2b10c48-8f14-4c14-a230-95b51f39008a">
+                        <img class="link" src="../assets/imagens/cabecalho/icon/ifood.png" alt="ifood"
+                            style="width: 55px; margin-top: 10px; margin-left: 15px" />
+                        </a>
+                        <p class="cabec__description">Va a pagina deste restaurante no ifood</p>
+                </div>
+                <div class="cabec_wrap col-sm-1">
+                    <a href="postar.html">
+                        <img class="link" src="../assets/imagens/cabecalho/icon/add.svg" alt="add"
+                            style="width:35px; margin-left: 15px" />
+                    </a>
+                    <p class="cabec__description">Adicione uma nova receita</p>
+                </div>
                 <div class="col-sm-1">
                     <a href="home.html">
-                        <img class="link" src="../assets/imagens/cabecalho/icon/home.svg" style="width: 50px" />
+                        <img class="link" src="../assets/imagens/cabecalho/icon/home.svg" alt="home"
+                            style="width:35px" />
                     </a>
                 </div>
                 <div class="col-sm-1">
                     <a href="cadastro.html">
-                        <img class="link" src="../assets/imagens/cabecalho/icon/login.png" style="width: 50px" />
+                        <img class="link" src="../assets/imagens/cabecalho/icon/login.png" alt="cadastro"
+                            style="width:35px" />
                     </a>
                 </div>
                 <div class="col-sm-1">
                     <a href="sobre.html">
-                        <img class="link" src="../assets/imagens/cabecalho/icon/config.svg" style="width: 55px" />
+                        <img class="link" src="../assets/imagens/cabecalho/icon/config.svg" alt="sobre"
+                            style="width: 40px" />
                     </a>
                 </div>
                 <div class="col-sm-1"></div>
@@ -73,7 +90,7 @@
     <div class="row">
         <!-- filtro -->
         <div class="col-sm-3">
-            <div class="filtro col-sm-10">
+            <div class="filtro col-sm-11">
                 <div>
                     <h3 class="titulo">Filtro</h3>
 
@@ -89,38 +106,54 @@
                     </ul>
 
                     <center>
-                        <button>filtrar</button>
+                        <div class="filtrar">FILTRAR</div>
                     </center>
                 </div>
             </div>
-            <div class="filtro col-sm-10">
+            <div class="filtro col-sm-11">
                 <div>
                     <h2 class="titulo">Sobre</h2>
                     <ul class="sobre">
-                        <p>Criada a fim de poder levar as grandes invenções culinárias dos grandes restaruantes aos seus
-                            admiradores, o God Recipe surgiu como<br> uma alternativa para os apreciadores da
-                            Gastronomia
-                            poderem fazer seu próprio prato na comodidade de sua casa.
+                        <p>
+                            RODÍZIO DIFERENTE E INOVADOR
+                            Especialidades da cozinha japonesa. Receptividade. Ambiente. Qualidade. E sucesso.
+                            Após 10 anos colhendo bons frutos e gerando experiências cada vez mais satisfatórias.
+                            Com uma cozinha sofisticada e preparada, e grande conhecimento da cultura oriental
+                            na elaboração do cardápio, o DJAPA atrai os mais exigentes paladares e conquista
+                            apreciadores de pratos bem montados e saudáveis.
+                        </p>
+                    </ul>
+                    <h2 class="titulo">Horário de Funcionamento:</h2>
+                    <ul class="sobre">
+                        <p>
+                            Segunda a quinta das 12h Ã s 15h e das 19h Ã s 23h
+                            Sexta das 12h as 15h e das 19h as 24h
+                            Sábado das 12h Ã s 24h
+                            Domingo das 12h Ã s 22h30
+                        </p>
                     </ul>
                 </div>
             </div>
-            <div class="filtro col-sm-10">
+            <div class="filtro col-sm-11">
 
                 <div>
                     <h2 class="titulo">Localização</h2>
-                    <img src="../assets/imagens/sideMenu/img/Map.png" width=230 height=160>
+                    <img src="../assets/imagens/sideMenu/img/Map.png" width=240 height=170>
                     <p>
+                        Rua Gaivota, 168,
+                        Moema, São Paulo/SP
+                        11 2691-2003
+                        11 2691-2004
+                    </p>
                 </div>
             </div>
         </div>
 
         <!-- nome -->
-        
+
         <!-- post -->
         <div class="col-sm-8">
-            <div class="col-sm-8" style="text-align: center; margin-top: 80px; left: 15px;">
-                <h2>Juninho Silva</h2>
-            </div>
+
             <div class="espaco">
             </div>
 
@@ -128,10 +161,10 @@
                 <div class="row">
 
                     <div class="col-sm-9 cabecalho row">
-                        <img class="avatar" src="../assets/imagens/post/img/nofoto.jpg" alt="">
+                        <img class="avatar" src="../assets/imagens/cabecalho/img/perfil.png" alt="">
                         <div class="col dados">
                             <div>
-                                <text class="nameTxt">Juninho</text>
+                                <text class="nameTxt">DJAPA</text>
                             </div>
                             <div>
                                 <text class="dataTxt">30 de abr 17:37</text>
@@ -156,15 +189,15 @@
                             </ol>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img class="d-block" src="../assets/imagens/post/img/pizza1.jpg"
+                                    <img class="d-block" src="../assets/imagens/post/img/djapa/japonesa.jpeg"
                                         style="width:100%; height:100%; max-height: 350px" alt="First slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block" src="../assets/imagens/post/img/pizza2.jpg"
+                                    <img class="d-block" src="../assets/imagens/post/img/djapa/yakissoba2.jpg"
                                         style="width:100%; height:100%; max-height: 350px" alt="Second slide">
                                 </div>
                                 <div class="carousel-item">
-                                    <img class="d-block" src="../assets/imagens/post/img/pizza3.jpg"
+                                    <img class="d-block" src="../assets/imagens/post/img/djapa/jp3.jpg"
                                         style="width:100%; height:100%; max-height: 350px" alt="Third slide">
                                 </div>
                             </div>
@@ -182,25 +215,28 @@
                     </div>
 
                     <div class="col-sm-3 row">
-                        <div>
-                            <text class="previaTxt">Prévia</text>
-                        </div>
 
                         <div>
-                            <text class="resumoTxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-                                hendrerit commodo eros. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-                                posuere cubilia curae;. </text>
+                            <p>
+                                <img src="../assets/imagens/novaReceita/img/relogio.png" class="relogio"> 45min
+                            </p>
+                            <p>
+                                <img src="../assets/imagens/novaReceita/img/porção.png" class="porção"> 9
+                            </p>
+                            <p>
+                                <text style="font-weight: bold">Características adicionais:</text> Custo médio,
+                                Salteado, Receitas japonesas
+                            </p>
                         </div>
-                        <div>
+                        <!--  <div>
                             <text class="maisTxt">Ver mais...</text>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="row " style="height: 25px">
 
-
-                    <div class="avaliacao col-sm-9">
-                        <text>
+                    <div class="avaliacao col-sm-8">
+                        <text class="aval__wrap">
                             <a href="javascript:void(0)" onclick="Avaliar(1)">
                                 <img src="../assets/imagens/post/icon/chef.png" style="width: 25px" id="s1"></a>
 
@@ -221,29 +257,92 @@
                             <text style="font-size: 15px; font-weight: bold">
                                 / 5
                             </text>
+                            <p class="aval__description">Clique em um chapeu para avaliar</p>
                         </text>
                     </div>
 
-
+                    <div class="col-sm-1">
+                        <div class="img__wrap">
+                            <a href="https://www.rappi.com.br/aliados/carrefourhome">
+                                <img class="img__img" src="../assets/imagens/cabecalho/icon/rappi.png"
+                                    style="width: 45px; margin-top: 10px" />
+                            </a>
+                            <p class="img__description">Comprar Ingredientes desta receita</p>
+                        </div>
+                    </div>
                 </div>
 
                 <div class='row' style="margin-top: 20px">
 
                     <div class="col-sm-9 ">
-                        <h3> Ingredientes</h3>
+                        <h3>Ingredientes</h3>
                         <ul>
-                            <li>1 colher de manteiga</li>
-                            <li>1 copo de leite morno</li>
-                            <li>1 colher pequena de sal</li>
+                            <li>
+                                300 g de macarrão para yakisoba
+                            </li>
+
+                            <li>
+                                1 cebola grande picada em pedaços médios
+                            </li>
+
+                            <li>
+                                1 colher (sopa) de óleo
+                            </li>
+
+                            <li>
+                                1/2 maço pequeno de brócolis
+                            </li>
+
+                            <li>
+                                1/2 maço pequeno de couve-flor
+                            </li>
+
+                            <li>
+                                250 ml de molho para yakissoba
+                            </li>
+
+                            <li>
+                                6 colheres (sopa) de molho shoyu
+                            </li>
+
+                            <li>
+                                400 g de tirinhas de carne (mignon, patinho ou alcatra)
+                            </li>
+
+                            <li>
+                                1 cenoura cortada em diagonal
+                            </li>
+
+                            <li>
+                                4 folhas de acelga cortadas em diagonal
+                            </li>
                         </ul>
-                        <p>Misture tudo em uma travessa com as mãos. Caso não encontre o ponto certo, adicione mais
-                            farinha
-                            até desgrudar a massa das mãos. Separar 4 bolinhas de massa. Abra-as separadamente na
-                            frigideira. Asse somente um lado até o ponto desejado.Vire a massa. Desligue o fogo. Coloque
-                            molho de tomate. Cubra o molho com mussarela, rodelas de tomate e orégano. Asse agora o
-                            outro
-                            lado. Tampe para que o queijo derreta.
+
+                        <p>Passos a seguir para fazer esta receita:</p>
+                        <p>
+                            1 - Comece por fazer o molho caseiro de yakissoba: coloque a manteiga derretendo na panela,
+                            quando estiver quente, junte a cebola e o gengibre e deixe refogar. Junte o shoyu, deixe por
+                            mais um tempo e depois acrescente água com o amido diluído nela e o açúcar. Espere ferver
+                            para espessar e desligue.
                         </p>
+                        <p>
+                            2 - Com o molho pronto cozinhe o macarrão em água com sal durante cerca de 4 minutos,
+                            escorra e reserve.
+                        </p>
+                        <p>
+                            3 - Continue preparando essa receita de yakisoba de carne e legumes: em uma panela grande
+                            coloque a manteiga e acrescente as carnes com a cebola. Deixe cozinhar junto até dourar.
+                        </p>
+                        <p>
+                            4- De seguida acrescente todos os legumes e tempere com shoyu e com o molho preparado no
+                            primeiro passo. Deixe cozinhar até os legumes ficarem macios.
+                        </p>
+                        <p>
+                            5 - Adicione o macarrão, misturando tudo e sirva seu yakissoba de carne, frango e legumes em
+                            seguida. Aprecie como é saboroso e deixe um comentário com sua opinião. Bom apetite!
+                            Experimente também preparar as receitas japonesas de carne lo mein, sobá e Kare Rais
+                        </p>
+
                     </div>
 
                 </div>

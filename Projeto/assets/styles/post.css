@@ -33,3 +33,59 @@
 .dados{
   padding-top: 25px;
 }
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.img__wrap {
+  position: relative;
+  height: 200px;
+  width: 257px;
+}
+
+.img__description {
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #0007;
+  visibility: hidden;
+  opacity: 0;
+
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+
+.aval__wrap {
+  position: relative;
+}
+
+.aval__description {
+  position: absolute;
+  top: -27px;
+  bottom: 0;
+  left: -15px;
+  right: 0;
+  color: #0007;
+  visibility: hidden;
+  opacity: 0;
+  width: 250px;
+
+  transition: opacity .2s, visibility .2s;
+}
+
+.aval__wrap:hover .aval__description {
+  visibility: visible;
+  opacity: 1;
+}

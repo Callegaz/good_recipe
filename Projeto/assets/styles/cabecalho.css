@@ -18,7 +18,43 @@
 }
 
 .good {
-  font-size: 30px;
+  font-size: 40px;
   /* font-family: 'Gloria Hallelujah', cursive; */
   font-family: "Kaushan Script", cursive;
+}
+.person {
+  border-radius: 100px;
+  width: 170px;
+  box-shadow: 5px 5px 5px #0007;
+  position: absolute;
+  left: 20%;
+  top: -25%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.cabec__wrap {
+  position: relative;
+}
+
+.cabec__description {
+  position: absolute;
+  top: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #0007;
+  visibility: hidden;
+  opacity: 0;
+
+  transition: opacity .2s, visibility .2s;
+}
+
+.cabec__wrap:hover .cabec__description {
+  visibility: visible;
+  opacity: 1;
 }

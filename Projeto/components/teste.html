@@ -1,87 +1,588 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 
 <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/novaReceita.css">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/cabecalho.css">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/sideMenu.css">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/post.css">
+    <link rel="stylesheet" type="text/css" href="../assets/styles/cadastro.css">
+
+
+    <!-- js -->
+    <script src="../js/funcoes.js"></script>
+
     <!-- Meta tags Obrigatórias -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="../assets/styles/cabecalho.css">
-
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <style>
-        /* Style buttons */
-        .barra {
-            text-align: left;
-            font-weight: bold;
-            font-style: italic;
-            font-size: 23px;
-            color: white;
-            background-color: #f48b14;
-            height: 130px;
-        }
-       
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-        .link:hover{
-            color: white;
+    <!-- bootstrap js -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #000
         }
-        
-        .align {
-            text-align: center;
+
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:link {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: orange;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: orange;
+            text-decoration: none;
+        }
+
+        .postar {
+            background-color: orange;
+            color: black;
+            padding: 5px;
+            width: 100px;
+            font-weight: BOLD;
+        }
+
+        .postar:hover {
+            background-color: #000;
+            color: orange;
+        }
+
+        .filtroL {
+            color: #f5fffa;
+            padding: 20px;
+            /* box-shadow: 8px 4px 8px #0007; */
+            position: fixed;
+            left: 0;
+            top: 3%;
+            margin-bottom: 23px;
+            border-radius: 15px
+        }
+
+        .filtroR {
+            color: #f5fffa;
+            padding: 20px;
+            /* box-shadow: 8px 4px 8px #0007; */
+            position: fixed;
+            left: 0;
+            top: 3%;
+            margin-bottom: 23px;
+            border-radius: 15px
         }
     </style>
-
     <title>Good Recipe</title>
 
 </head>
 
 <body>
+    <!-- cabecalho -->
     <div class="row barra">
-        <div class="col-sm-1"></div>
+        <div style="width: 20px"></div>
 
         <div class="col-sm-1">
-            <img src="../assets/imagens/cabecalho/icon/logotipo.png" alt="logotipo" width="120" height="120">
+            <a href="home.html">
+                <img src="../assets/imagens/cabecalho/icon/logotipo.png" alt="logotipo" width="120" height="120">
+            </a>
+        </div>
+        <div style="width: 20px"></div>
+
+        <div class='col-sm-2'>
+            <span class="good">GOOD</span><br>
+            <span class="good" style="margin-left: 25px;">RECIPE</span>
         </div>
         <div class="col">
             <div class="row" style="height: 30%">
 
             </div>
             <div class="row">
-                <div class="col-sm-3 align">
-                    <text>GOOD RECIPE</text>
+                <div class="col-sm-2 align">
+
                 </div>
 
-                <div class="col-sm-5">
-                    <input class="form-control" style="width: 85%" type="search" placeholder="Buscar uma receita...">
-                </div>
-
-                <div class="col-sm-1">
-                    <a href="#">
-                        <img class="link" src="../assets/imagens/cabecalho/icon/person.png" style="width: 45px" />
+                <div class="col-sm-3">
+                    <a href="https://www.djapa.com.br/">
+                        <img class="person" src="../assets/imagens/cabecalho/img/perfil.png" alt="">
                     </a>
                 </div>
                 <div class="col-sm-1">
-                    <a href="#">
-                        <img class="link" src="../assets/imagens/cabecalho/icon/login.png" style="width: 50px" />
+
+                </div>
+
+                <div class="cabec_wrap col-sm-1">
+                    <a
+                        href="https://www.ifood.com.br/delivery/mogi-das-cruzes-sp/djapa-parque-monte-libano/e2b10c48-8f14-4c14-a230-95b51f39008a">
+                        <img class="link" src="../assets/imagens/cabecalho/icon/ifood.png" alt="ifood"
+                            style="width: 55px; margin-top: 10px; margin-left: 15px" />
+                    </a>
+                    <p class="cabec__description">Va a pagina deste restaurante no ifood</p>
+                </div>
+
+                <div class="col-sm-1">
+                    <a href="home.html">
+                        <img class="link" src="../assets/imagens/cabecalho/icon/home.svg" alt="home"
+                            style="width:35px; margin-left: 15px;" />
                     </a>
                 </div>
                 <div class="col-sm-1">
-                    <a href="#">
-                        <img class="link" src="../assets/imagens/cabecalho/icon/config.svg" style="width: 55px" />
+                    <a href="cadastro.html">
+                        <img class="link" src="../assets/imagens/cabecalho/icon/login.png" alt="cadastro"
+                            style="width:35px" />
+                    </a>
+                </div>
+                <div class="col-sm-1">
+                    <a href="sobre.html">
+                        <img class="link" src="../assets/imagens/cabecalho/icon/config.svg" alt="sobre"
+                            style="width: 40px" />
                     </a>
                 </div>
                 <div class="col-sm-1"></div>
             </div>
-           
+        </div>
+    </div>
+    <div class="row">
+        <!-- filtro -->
+        <div class="col-sm-3">
+
+            <div class="filtro col-sm-11">
+                <center>
+                    <div class="row">
+                        <div>
+                            <a href="postar.html">
+                                <img class="link" src="../assets/imagens/cabecalho/icon/add.svg" alt="add"
+                                    style="width:55px;margin-left: 150px; margin-top: 5px;" />
+                            </a>
+                        </div>
+                        <div style="width: 70px; margin-top: 7px;">Postar receita</div>
+                    </div>
+                </center>
+            </div>
+
+            <!--  <div>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <h3 class="titulo">Filtro</h3>
+
+                            <p>
+                                Filtrar receitar por:
+                            </p>
+
+                            <ul>
+                                <input type="radio" name="filtro" id="Avaliacao">
+                                <label>Nota mais alta</label><br>
+                                <input type="radio" name="filtro" id="Data">
+                                <label>Mais Recente</label> <br>
+                            </ul>
+
+                            
+                                <button class="filtrar">FILTRAR</button>
+                            
+                        </div>
+                        <div class="col-sm-5">
+                            <center>
+                                <div class="col" style="border-left: 1px solid white">
+                                    <div >
+                                        <a href="postar.html">
+                                            <img class="link" src="../assets/imagens/cabecalho/icon/add.svg" alt="add"
+                                                style="width:55px; margin-top: 55px; margin-left: 15px" />
+                                        </a>
+                                    </div>
+                                    <div style="width: 70px; margin-top: 7px;">Postar receita</div>
+                                </div>
+                            </center>
+                        </div>
+                    </div>
+
+                </div>
+            </div> -->
+
+            <!-- backup filtro  -->
+            <!--  <div class="filtro col-sm-11 col">
+                
+                <div>
+                    <h3 class="titulo">Filtro</h3>
+
+                    <p>
+                        Filtrar receitar por:
+                    </p>
+
+                    <ul>
+                        <input type="radio" name="filtro" id="Avaliacao">
+                        <label>Nota mais alta</label><br>
+                        <input type="radio" name="filtro" id="Data">
+                        <label>Mais Recente</label> <br>
+                    </ul>
+
+                    <center>
+                        <button class="filtrar">FILTRAR</button>
+                    </center>
+                </div>
+            </div> -->
+            <div class="filtroL col-sm-11 col">
+                <div>
+                    <h3 class="titulo">Filtro</h3>
+
+                    <p>
+                        Filtrar receitar por:
+                    </p>
+
+                    <ul>
+                        <input type="radio" name="filtro" id="Avaliacao">
+                        <label>Nota mais alta</label><br>
+                        <input type="radio" name="filtro" id="Data">
+                        <label>Mais Recente</label> <br>
+                    </ul>
+
+                    <center>
+                        <button class="filtrar">FILTRAR</button>
+                    </center>
+                </div>
+            </div>
+            <div class="filtroR col-sm-11 col">
+                    <div>
+                        <h3 class="titulo">Filtro</h3>
+    
+                        <p>
+                            Filtrar receitar por:
+                        </p>
+    
+                        <ul>
+                            <input type="radio" name="filtro" id="Avaliacao">
+                            <label>Nota mais alta</label><br>
+                            <input type="radio" name="filtro" id="Data">
+                            <label>Mais Recente</label> <br>
+                        </ul>
+    
+                        <center>
+                            <button class="filtrar">FILTRAR</button>
+                        </center>
+                    </div>
+                </div>
+            <div class="filtro col-sm-11">
+                <div>
+                    <h2 class="titulo">Sobre</h2>
+                    <ul class="sobre">
+                        <p>
+                            RODÍZIO DIFERENTE E INOVADOR
+                            Especialidades da cozinha japonesa. Receptividade. Ambiente. Qualidade. E sucesso.
+                            Após 10 anos colhendo bons frutos e gerando experiências cada vez mais satisfatórias.
+                            Com uma cozinha sofisticada e preparada, e grande conhecimento da cultura oriental
+                            na elaboração do cardápio, o DJAPA atrai os mais exigentes paladares e conquista
+                            apreciadores de pratos bem montados e saudáveis.
+                        </p>
+                    </ul>
+                    <h2 class="titulo">Horário de Funcionamento:</h2>
+                    <ul class="sobre">
+                        <p>
+                            Segunda a quinta das 12h as 15h e das 19h as 23h
+                            Sexta das 12h as 15h e das 19h as 24h
+                            Sábado das 12h as 24h
+                            Domingo das 12h as 22h30
+                        </p>
+                    </ul>
+                </div>
+            </div>
+            <div class="filtro col-sm-11">
+
+                <div>
+                    <h2 class="titulo">Localização</h2>
+                    <img src="../assets/imagens/sideMenu/img/Map.png" width=240 height=170>
+                    <p>
+                        Rua Gaivota, 168,
+                        Moema, São Paulo/SP
+                        11 2691-2003
+                        11 2691-2004
+                    </p>
+                </div>
+            </div>
         </div>
 
+        <!-- nome -->
 
+        <!-- post -->
+        <div class="col-sm-8">
+
+            <div class="espaco row">
+
+            </div>
+
+            <div class="container" name='post'>
+                <div class="row">
+
+                    <div class="col-sm-9 cabecalho row">
+                        <img class="avatar" src="../assets/imagens/cabecalho/img/perfil.png" alt="">
+                        <div class="col dados">
+                            <div style="font-weight: bold;">
+                                <!--  <text class="nameTxt">DJAPA</text> -->Yakissoba
+                            </div>
+                            <div class="row">
+                                <img class="link" src="../assets/imagens/post/icon/clock.svg" alt="add"
+                                    style="width:17px; margin-right: 5px; margin-left: 15px;" />
+                                <text class="dataTxt">30 de abr 17:37</text>
+                            </div>
+                            <div>
+                                <text>
+
+                                </text>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class='row'>
+                    <div class="col-sm-9 imagem">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block" src="../assets/imagens/post/img/djapa/japonesa.jpeg"
+                                        style="width:100%; height:100%; max-height: 400px; border-radius: 10px"
+                                        alt="First slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block" src="../assets/imagens/post/img/djapa/yakissoba2.jpg"
+                                        style="width:100%; height:100%; max-height: 400px; border-radius: 10px"
+                                        alt="Second slide">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block" src="../assets/imagens/post/img/djapa/jp3.jpg"
+                                        style="width:100%; height:100%; max-height: 400px; border-radius: 10px"
+                                        alt="Third slide">
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-3 row">
+
+                        <div>
+                            <p style="border-radius: 35px; box-shadow: 4px 4px 4px #0005;">
+                                <img src="../assets/imagens/novaReceita/img/relogio.png" class="relogio"> 45min
+                            </p>
+                            <p style="border-radius: 35px; box-shadow: 4px 4px 4px #0005;">
+                                <img src="../assets/imagens/novaReceita/img/porção.png" class="porção"> 9 porções
+                            </p>
+                            <br>
+                            <div>
+                                <span style="font-weight: bold; ">Marcadores:</span> 
+                                <!-- <ul>
+                                    <li>Custo médio</li>
+                                    <li>Salteado</li>
+                                    <li>Receitas japonesas</li>
+                                </ul> -->
+                                <!-- <div class="col">
+                                    <p style="border-radius: 35px; box-shadow: 4px 4px 4px #0005;">Custo médio</p>
+                                    <p style="border-radius: 35px; box-shadow: 4px 4px 4px #0005;">Salteado</p>
+                                    <p style="border-radius: 35px; box-shadow: 4px 4px 4px #0005;">Receitas japonesas</p>
+
+                                </div> -->
+                                <p>
+                                    Custo médio,<br>
+                                    Salteado, <br>
+                                    Receitas japonesas
+                                </p>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row " style="height: 25px">
+
+                    <div class="avaliacao col-sm-8">
+                        <text class="aval__wrap">
+                            <a href="javascript:void(0)" onclick="Avaliar(1)">
+                                <img src="../assets/imagens/post/icon/chef.png" style="width: 25px" id="s1"></a>
+
+                            <a href="javascript:void(0)" onclick="Avaliar(2)">
+                                <img src="../assets/imagens/post/icon/chef.png" style="width: 25px" id="s2"></a>
+
+                            <a href="javascript:void(0)" onclick="Avaliar(3)">
+                                <img src="../assets/imagens/post/icon/chef.png" style="width: 25px" id="s3"></a>
+
+                            <a href="javascript:void(0)" onclick="Avaliar(4)">
+                                <img src="../assets/imagens/post/icon/chef.png" style="width: 25px" id="s4"></a>
+
+                            <a href="javascript:void(0)" onclick="Avaliar(5)">
+                                <img src="../assets/imagens/post/icon/chef0.png" style="width: 25px" id="s5"></a>
+                            <text id="rating" style="font-size: 15px; font-weight: bold">
+                                4
+                            </text>
+                            <text style="font-size: 15px; font-weight: bold">
+                                / 5
+                            </text>
+                            <p class="aval__description">Clique em um chapeu para avaliar</p>
+                        </text>
+                    </div>
+
+                    <div class="col-sm-1">
+                        <div class="img__wrap">
+                            <a href="https://www.rappi.com.br/aliados/carrefourhome">
+                                <img class="img__img" src="../assets/imagens/cabecalho/icon/rappi.png"
+                                    style="width: 45px; margin-top: 10px" />
+                            </a>
+                            <p class="img__description">Comprar Ingredientes desta receita</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class='row' style="margin-top: 20px">
+
+                    <div class="col-sm-9 ">
+                        <h3>Ingredientes</h3>
+                        <ul>
+                            <li>
+                                300 g de macarrão para yakisoba
+                            </li>
+
+                            <li>
+                                1 cebola grande picada em pedaços médios
+                            </li>
+
+                            <li>
+                                1 colher (sopa) de óleo
+                            </li>
+
+                            <li>
+                                1/2 maço pequeno de brócolis
+                            </li>
+
+                            <li>
+                                1/2 maço pequeno de couve-flor
+                            </li>
+
+                            <li>
+                                250 ml de molho para yakissoba
+                            </li>
+
+                            <li>
+                                6 colheres (sopa) de molho shoyu
+                            </li>
+
+                            <li>
+                                400 g de tirinhas de carne (mignon, patinho ou alcatra)
+                            </li>
+
+                            <li>
+                                1 cenoura cortada em diagonal
+                            </li>
+
+                            <li>
+                                4 folhas de acelga cortadas em diagonal
+                            </li>
+                        </ul>
+
+                        <h3>Preparo:</h3>
+                        <p>
+                            1 - Comece por fazer o molho caseiro de yakissoba: coloque a manteiga derretendo na panela,
+                            quando estiver quente, junte a cebola e o gengibre e deixe refogar. Junte o shoyu, deixe por
+                            mais um tempo e depois acrescente água com o amido diluído nela e o açúcar. Espere ferver
+                            para espessar e desligue.
+                        </p>
+                        <p>
+                            2 - Com o molho pronto cozinhe o macarrão em água com sal durante cerca de 4 minutos,
+                            escorra e reserve.
+                        </p>
+                        <p>
+                            3 - Continue preparando essa receita de yakisoba de carne e legumes: em uma panela grande
+                            coloque a manteiga e acrescente as carnes com a cebola. Deixe cozinhar junto até dourar.
+                        </p>
+                        <p>
+                            4- De seguida acrescente todos os legumes e tempere com shoyu e com o molho preparado no
+                            primeiro passo. Deixe cozinhar até os legumes ficarem macios.
+                        </p>
+                        <p>
+                            5 - Adicione o macarrão, misturando tudo e sirva seu yakissoba de carne, frango e legumes em
+                            seguida. Aprecie como é saboroso e deixe um comentário com sua opinião. Bom apetite!
+                            Experimente também preparar as receitas japonesas de carne lo mein, sobá e Kare Rais
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
 
     </div>
+    <footer>
+        <div class="footer text-white bg-dark" style="margin-top: 50px;">
 
+            <div class="row" style="justify-content: space-around">
+
+                <div class="col-sm-3">
+                    <h3>Nossa História</h3>
+                    <p>Quando iniciamos o Good Recipe queriamos apenas um site que adoraríamos utilizar.
+                        Somos apaixonados por comer e por cozinhar e fazer as coisas com as nossas próprias mãos.
+                        E queriamos ajudar aqueles como nós.</p>
+                </div>
+
+                <div class="col-sm-3">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li> +55 11 9999-9999</li>
+                        <li> contato@goodrecipe.com</li>
+                        <li> Av. Angélica, 2565 - Bela Vista, São Paulo - SP,</li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-3">
+                    <h3>Redes Sociais</h3>
+
+                    <div class="imagens">
+                        <img class="img" src="../assets/imagens/cadastro/icon/fb-icon.png" alt="">
+                        <img class="img" src="../assets/imagens/cadastro/icon/google-icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

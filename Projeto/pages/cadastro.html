@@ -13,46 +13,56 @@
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <meta charset="utf-8">
 
-    <title>Tela de Login</title>
+      <!-- fontes -->
+      <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet"> 
+
+    <title>Good Recipe</title>
 
 </head>
 
 <body>
     <!-- cabecalho -->
     <div class="row barra">
-        <div class="col-sm-1"></div>
+            <div style="width: 100px"></div>
 
-        <div class="col-sm-1">
-            <a href="home.html">
-                <img src="../assets/imagens/cabecalho/icon/logotipo.png" alt="logotipo" width="120" height="120">
-            </a>
-        </div>
+            <div class="col-sm-1">
+                <a href="home.html">
+                    <img src="../assets/imagens/cabecalho/icon/logotipo.png" alt="logotipo" width="120" height="120">
+                </a>
+            </div>
+            <div style="width: 50px"></div>
+    
+            <div class='col-sm-2'>
+                <span class="good">GOOD</span><br>
+                <span class="good" style="margin-left: 25px;">RECIPE</span>
+            </div>
         <div class="col">
             <div class="row" style="height: 30%">
 
             </div>
             <div class="row">
                 <div class="col-sm-3 align">
-                    <text class="good">GOOD RECIPE</text>
+                    
                 </div>
 
-                <div class="col-sm-5">
+                <div class="col-sm-2">
                     <!--  <input class="form-control" style="width: 85%" type="search" placeholder="Buscar uma receita..."> -->
                 </div>
 
-                <div class="col-sm-1">
+                <div class="col-sm-2">
                     <a href="perfil.html">
-                        <img class="link" src="../assets/imagens/cabecalho/icon/person.png" style="width: 45px" />
+                        <img class="link" src="../assets/imagens/cabecalho/icon/person.png" style="width: 34px; margin-top: 2px;" />
                     </a>
                 </div>
-                <div class="col-sm-1">
+                <div class="col-sm-2">
                     <a href="home.html">
-                        <img class="link" src="../assets/imagens/cabecalho/icon/home.svg" style="width: 50px" />
+                        <img class="link" src="../assets/imagens/cabecalho/icon/home.svg" style="width: 35px" />
                     </a>
                 </div>
-                <div class="col-sm-1">
+                <div class="col-sm-2">
                     <a href="sobre.html">
-                        <img class="link" src="../assets/imagens/cabecalho/icon/config.svg" style="width: 55px" />
+                        <img class="link" src="../assets/imagens/cabecalho/icon/config.svg" style="width: 35px" />
                     </a>
                 </div>
                 <div class="col-sm-1"></div>
@@ -65,7 +75,7 @@
                 <img class="img-login" src="../assets/imagens/cadastro/img/nofoto.jpg" alt="">
 
                 <br>
-                <h2 class="bv"><b>BEM VINDO!</b></h2>
+                <h2 class="bv" style="margin-top: 25px;"><b>BEM VINDO!</b></h2>
 
                 <form>
                     <div class="form-group">
@@ -83,7 +93,7 @@
                 </div>
 
                 <div class="botao">
-                    <center><button class="buton-entrar" type="submit" name="button">ENTRAR</button></center>
+                    <center><button class="botones" type="submit" name="button">ENTRAR</button></center>
                 </div>
                 <br>
                 <div class="imagens">
@@ -96,7 +106,7 @@
                 </div>
 
                 <h2>OU</h2>
-                <p>Cadastre-se diretamente no nosso site</p>
+                <p>Cadastre-se</p>
 
 
                 <form>
@@ -149,13 +159,46 @@
                 </div>
 
                 <div class="botao">
-                    <center><button class="buton-cadastrar" type="submit" name="button">CADASTRAR</button></center>
+                    <center><button class="botones" type="submit" name="button">CADASTRAR</button></center>
                 </div>
 
 
             </div>
     </form>
+    
 
 </body>
+<footer>
+        <div class="footer text-white bg-dark" style="margin-top: 50px; position: absolute; right: 0; left: 0">
+
+            <div class="row" style="justify-content: space-around">
+
+                <div class="col-sm-3">
+                    <h3>Nossa História</h3>
+                    <p>Quando iniciamos o Good Recipe queriamos apenas um site que adoraríamos utilizar.
+                        Somos apaixonados por comer e por cozinhar e fazer as coisas com as nossas próprias mãos.
+                        E queriamos ajudar aqueles como nós.</p>
+                </div>
+
+                <div class="col-sm-3">
+                    <h3>Contato</h3>
+                    <ul>
+                        <li> +55 11 9999-9999</li>
+                        <li> contato@goodrecipe.com</li>
+                        <li>  Av. Angélica, 2565 - Bela Vista, São Paulo - SP,</li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-3">
+                    <h3>Redes Sociais</h3>
+
+                    <div class="imagens">
+                            <img class="img" src="../assets/imagens/cadastro/icon/fb-icon.png" alt="">
+                            <img class="img" src="../assets/imagens/cadastro/icon/google-icon.png" alt="">
+                        </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </html>

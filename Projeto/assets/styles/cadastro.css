@@ -1,7 +1,7 @@
-/* body {
-    background-image: linear-gradient(to bottom, #b36100, #f28402);
+body {
+    background-color: whitesmoke;
     font-family: sans-serif;
-  } */
+  }
   
   .form {
     width: 600px;
@@ -9,6 +9,7 @@
     padding-top: 50px;
   }
   
+
   .border {
     box-shadow: 1px 1px #ccc;
     background-color: #f5f3f0;
@@ -28,7 +29,7 @@
   }
   
   .bv {
-    color: #f57902;
+    color: #000;
     font-family: constantia;
   }
   
@@ -64,3 +65,17 @@
     background-color: #b36100;
   }
   
+  .botones {
+    background-color: orange;
+    color: black;
+    padding: 5px;
+    width: 35%;
+    font-weight: BOLD;
+    margin-left: 20px;
+  }
+
+
+.botones:hover {
+  background-color: black;
+  color: orange;
+}
